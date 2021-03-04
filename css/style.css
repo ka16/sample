@@ -42,6 +42,10 @@ body {
   color: #26262C !important;
 }
 
+.hp_fwM {
+  font-weight: 600;
+}
+
 .el_arrow__down {
   width: 100%;
   margin: 20px 0px;
@@ -92,6 +96,12 @@ body {
   line-height: 23px;
   font-size: 16px;
   margin-right: 5px;
+}
+
+.el_convTxt__str {
+  font-size: 43px;
+  line-height: 45px;
+  font-weight: 800;
 }
 
 .el_footer_menu_ttl {
@@ -422,12 +432,6 @@ main {
 .ly_conv > p {
   font-size: 34px;
   line-height: 45px;
-}
-
-.ly_conv > p span {
-  font-size: 43px;
-  line-height: 45px;
-  font-weight: 800;
 }
 
 .ly_conv .el_convButton {

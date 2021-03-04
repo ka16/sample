@@ -30,6 +30,9 @@ body {
 .hp_txtB {
   color: $black !important;
 }
+.hp_fwM {
+  font-weight: 600;
+}
 .el_arrow__down {
   width: 100%;
   margin: 20px 0px;
@@ -73,6 +76,11 @@ body {
   line-height: 23px;
   font-size: 16px;
   margin-right: 5px;
+}
+.el_convTxt__str {
+  font-size: 43px;
+  line-height: 45px;
+  font-weight: 800;
 }
 .el_footer_menu_ttl {
   font-size: 18px;
@@ -343,11 +351,6 @@ main {
   & > p {
     font-size: 34px;
     line-height: 45px;
-    span {
-      font-size: 43px;
-      line-height: 45px;
-      font-weight: 800;
-    }
   }
   .el_convButton {
     margin-top: 20px;
