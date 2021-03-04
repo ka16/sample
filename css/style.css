@@ -230,6 +230,7 @@ main {
   line-height: 32px;
   text-align: center;
   padding: 8px 0;
+  font-weight: 700;
 }
 
 .bl_txtBox__b .txtBox_ttl {
@@ -277,8 +278,16 @@ main {
   border-radius: 0 0 7px 7px;
 }
 
-.bl_txtBox_descri .bl_txtBox_descri_item {
-  background: url(../img/check.png) no-repeat;
+.bl_txtBox_descri.icon__y .bl_txtBox_descri_item {
+  background: url(../img/check_y.png) no-repeat;
+  background-repeat: no-repeat;
+  background-position: top left;
+  line-height: 23px;
+  padding-left: 30px;
+}
+
+.bl_txtBox_descri.icon__or .bl_txtBox_descri_item {
+  background: url(../img/check_or.png) no-repeat;
   background-repeat: no-repeat;
   background-position: top left;
   line-height: 23px;
