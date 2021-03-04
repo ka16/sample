@@ -3,22 +3,18 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .hp_nonDecoration {
   text-decoration: none;
 }
 
-.el_fadeLeft {
+.el_fadeBottom {
   opacity: 0;
-  -webkit-transform: translate(-200px, 0);
-          transform: translate(-200px, 0);
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.el_fadeRight {
-  opacity: 0;
-  -webkit-transform: translate(200px, 0);
-          transform: translate(200px, 0);
+  -webkit-transform: translate(0, 200px);
+          transform: translate(0, 200px);
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -534,7 +530,7 @@ footer .el_footer_menu li i {
 
 @media screen and (min-width: 768px) {
   .ly_MV {
-    height: 430px;
+    height: 600px;
     width: 100%;
     background: #FFD000;
   }
