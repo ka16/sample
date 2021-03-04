@@ -125,8 +125,19 @@ main {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: url(../img/people.png) no-repeat;
-    background-position: center bottom;
+  }
+  .bl_voices_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    // height: 400px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .bl_MV_ttl {
     padding-top: 34px;
@@ -139,55 +150,10 @@ main {
       font-weight: 800;
     }
   }
-  .bl_MV_voice {
-    position: absolute;
-    width: 40%;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & * {
-      position: absolute;
-    }
-  }
-  .bl_MV_voice__left {
-    bottom: 50%;
-    left: 5%;
-    background-position: center;
-    transform: translate(-5%, 45%);
-    & > p {
-      margin-right: -10px;
-    }
-  }
-  .bl_MV_voice__center {
-    left: 60%;
-    bottom: 65%;
-    transform: translate(-60%,-55%);
-    & > p {
-    }
-  }
-  .bl_MV_voice__right {
-    right: 2%;
-    bottom: 50%;
-    transform: translate(-5%, 40%);
-
-    & > p {
-      margin-left: -10px;
-    }
-  }
-  .bl_MV_people {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 340px;
-    width: 100%;
-  }
 }
 .bl_txtBox_wrapper {
   max-width: 900px;
+  width: calc(100% - 56px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -251,15 +217,20 @@ main {
 }
 .bl_txtBox_descri, .bl_txtBox_descri__combine{
   padding: 20px 42px;
-  border-radius: 0 0 7px 7px /0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
 }
 .bl_txtBox_descri {
   .bl_txtBox_descri_item {
-    background: url(../img/check-1.png) no-repeat;
+    background: url(../img/check.png) no-repeat;
     background-repeat: no-repeat;
     background-position: top left;
     line-height: 23px;
     padding-left: 30px;
+  }
+}
+.bl_txtBox_descri__combine {
+  .bl_txtBox_descri_item {
+    line-height: 23px;
   }
 }
 .bl_flowText {
@@ -277,8 +248,9 @@ main {
 .ly_price {
   .bl_Pricetable {
     max-width: 900px;
-    width: calc(100% -56px);
+    width: calc(100% - 56px);
     margin: 0 auto;
+    padding: 0 2;
   }
   .bl_Pricetable_wrapper {
     width: calc(100% - 60px);
@@ -409,13 +381,13 @@ footer {
       justify-content: space-between;
       border-bottom: 1px solid #fff;
       padding: 10px 0px 11px;
-      &:hover i{
+      &:hover img{
         transform: translateX(5px) scale(1.1);
       }
       a {
         color: #fff;
       }
-      i {
+      img {
         margin-right: 10px;
         transition: .2s;
         
@@ -437,7 +409,6 @@ footer {
       width: 100%;
       height: 100%;
       margin: 0 auto;
-      background: none;
     }
     .bl_MV_ttl {
       padding-top: 34px;
@@ -453,56 +424,9 @@ footer {
     }
     .bl_voices_wrapper {
       position: relative;
-      width: 380px;
-      background: url(../img/people.png) no-repeat;
-      background-position: center bottom;
-
-    }
-    .bl_MV_voice {
-      position: absolute;
-      width: 40%;
-      font-size: 12px;
-      line-height: 20px;
-      font-weight: 700;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      & * {
-        position: absolute;
-      }
-    }
-    .bl_MV_voice__left {
-      bottom: 65%;
-      left: 5%;
-      background-position: center;
-      transform: translate(-5%, 45%);
-      & > p {
-        margin-right: -10px;
-      }
-    }
-    .bl_MV_voice__center {
-      left: 60%;
-      bottom: 85%;
-      transform: translate(-60%,-55%);
-      & > p {
-      }
-    }
-    .bl_MV_voice__right {
-      right: 0%;
-      bottom: 65%;
-      transform: translate(-5%, 40%);
-  
-      & > p {
-        margin-left: -10px;
-      }
-    }
-    .bl_MV_people {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 340px;
-      width: 100%;
+      width: 400px;
+      margin-top: auto;
+      padding-right: 20px;
     }
   }
   

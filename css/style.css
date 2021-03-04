@@ -151,8 +151,21 @@ main {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background: url(../img/people.png) no-repeat;
-  background-position: center bottom;
+}
+
+.ly_MV .bl_voices_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.ly_MV .bl_voices_wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .ly_MV .bl_MV_ttl {
@@ -168,69 +181,9 @@ main {
   font-weight: 800;
 }
 
-.ly_MV .bl_MV_voice {
-  position: absolute;
-  width: 40%;
-  font-size: 12px;
-  line-height: 20px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.ly_MV .bl_MV_voice * {
-  position: absolute;
-}
-
-.ly_MV .bl_MV_voice__left {
-  bottom: 50%;
-  left: 5%;
-  background-position: center;
-  -webkit-transform: translate(-5%, 45%);
-          transform: translate(-5%, 45%);
-}
-
-.ly_MV .bl_MV_voice__left > p {
-  margin-right: -10px;
-}
-
-.ly_MV .bl_MV_voice__center {
-  left: 60%;
-  bottom: 65%;
-  -webkit-transform: translate(-60%, -55%);
-          transform: translate(-60%, -55%);
-}
-
-.ly_MV .bl_MV_voice__right {
-  right: 2%;
-  bottom: 50%;
-  -webkit-transform: translate(-5%, 40%);
-          transform: translate(-5%, 40%);
-}
-
-.ly_MV .bl_MV_voice__right > p {
-  margin-left: -10px;
-}
-
-.ly_MV .bl_MV_people {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  max-width: 340px;
-  width: 100%;
-}
-
 .bl_txtBox_wrapper {
   max-width: 900px;
+  width: calc(100% - 56px);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,15 +264,19 @@ main {
 
 .bl_txtBox_descri, .bl_txtBox_descri__combine {
   padding: 20px 42px;
-  border-radius: 0 0 7px 7px /0 0 7px 7px;
+  border-radius: 0 0 7px 7px;
 }
 
 .bl_txtBox_descri .bl_txtBox_descri_item {
-  background: url(../img/check-1.png) no-repeat;
+  background: url(../img/check.png) no-repeat;
   background-repeat: no-repeat;
   background-position: top left;
   line-height: 23px;
   padding-left: 30px;
+}
+
+.bl_txtBox_descri__combine .bl_txtBox_descri_item {
+  line-height: 23px;
 }
 
 .bl_flowText {
@@ -337,8 +294,9 @@ main {
 
 .ly_price .bl_Pricetable {
   max-width: 900px;
-  width: calc(100% -56px);
+  width: calc(100% - 56px);
   margin: 0 auto;
+  padding: 0 2;
 }
 
 .ly_price .bl_Pricetable_wrapper {
@@ -513,7 +471,7 @@ footer .el_footer_menu li {
   padding: 10px 0px 11px;
 }
 
-footer .el_footer_menu li:hover i {
+footer .el_footer_menu li:hover img {
   -webkit-transform: translateX(5px) scale(1.1);
           transform: translateX(5px) scale(1.1);
 }
@@ -522,7 +480,7 @@ footer .el_footer_menu li a {
   color: #fff;
 }
 
-footer .el_footer_menu li i {
+footer .el_footer_menu li img {
   margin-right: 10px;
   -webkit-transition: .2s;
   transition: .2s;
@@ -545,7 +503,6 @@ footer .el_footer_menu li i {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background: none;
   }
   .ly_MV .bl_MV_ttl {
     padding-top: 34px;
@@ -561,62 +518,9 @@ footer .el_footer_menu li i {
   }
   .ly_MV .bl_voices_wrapper {
     position: relative;
-    width: 380px;
-    background: url(../img/people.png) no-repeat;
-    background-position: center bottom;
-  }
-  .ly_MV .bl_MV_voice {
-    position: absolute;
-    width: 40%;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .ly_MV .bl_MV_voice * {
-    position: absolute;
-  }
-  .ly_MV .bl_MV_voice__left {
-    bottom: 65%;
-    left: 5%;
-    background-position: center;
-    -webkit-transform: translate(-5%, 45%);
-            transform: translate(-5%, 45%);
-  }
-  .ly_MV .bl_MV_voice__left > p {
-    margin-right: -10px;
-  }
-  .ly_MV .bl_MV_voice__center {
-    left: 60%;
-    bottom: 85%;
-    -webkit-transform: translate(-60%, -55%);
-            transform: translate(-60%, -55%);
-  }
-  .ly_MV .bl_MV_voice__right {
-    right: 0%;
-    bottom: 65%;
-    -webkit-transform: translate(-5%, 40%);
-            transform: translate(-5%, 40%);
-  }
-  .ly_MV .bl_MV_voice__right > p {
-    margin-left: -10px;
-  }
-  .ly_MV .bl_MV_people {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    max-width: 340px;
-    width: 100%;
+    width: 400px;
+    margin-top: auto;
+    padding-right: 20px;
   }
   .bl_txtBox_wrapper {
     -webkit-box-orient: horizontal;
